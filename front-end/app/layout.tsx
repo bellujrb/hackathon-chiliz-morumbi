@@ -7,8 +7,7 @@ import FootballCursor from '@/components/ui/footbal-cursor';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Fanify',
-  description: 'The new generation of sports engagement with Blockchain and Instagram.',
+  title: 'Fanify SPFC',
 };
 
 export default function RootLayout({

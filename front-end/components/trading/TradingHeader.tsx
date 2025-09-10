@@ -4,6 +4,7 @@ import React from 'react';
 import { useAccount, useConnect, useDisconnect } from 'wagmi';
 import { Button } from '@/components/ui/button';
 import { Wallet, LogOut } from 'lucide-react';
+import Link from 'next/link';
 
 const TradingHeader: React.FC = () => {
   const { isConnected, address } = useAccount();
@@ -21,6 +22,14 @@ const TradingHeader: React.FC = () => {
           </div>
           
           <div className="flex items-center space-x-4">
+            {/* Contratos Ativos Button */}
+            <Link href="/contracts">
+              <Button className="bg-green-600 hover:bg-green-700 text-white border-0 font-semibold px-4 py-2 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg">
+                <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse"></div>
+                Contratos Ativos
+              </Button>
+            </Link>
+            
             {isConnected ? (
               <div className="flex items-center space-x-3">
                 <div className="text-sm text-gray-600">

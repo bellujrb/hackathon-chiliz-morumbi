@@ -134,8 +134,14 @@ export default function Header() {
             </NavigationMenu>
           </nav>
 
-          {/* Launch App Button */}
-          <div className="flex items-center space-x-4">
+          {/* Action Buttons */}
+          <div className="flex items-center space-x-3">
+            <Link href="/contracts">
+              <Button className="bg-green-600 hover:bg-green-700 text-white border-0 font-semibold px-4 py-2 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg">
+                <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse"></div>
+                Contratos Ativos
+              </Button>
+            </Link>
             <Link href="/app">
               <Button className="bg-red-600 hover:bg-red-700 text-white border-0 font-semibold px-6 py-2 rounded-xl transition-all duration-300">
                 Stake SPFC
@@ -159,6 +165,21 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
+              {/* Mobile Action Buttons */}
+              <div className="flex flex-col gap-2 px-3 py-2">
+                <Link href="/contracts" onClick={() => setIsMenuOpen(false)}>
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white border-0 font-semibold py-2 rounded-xl transition-all duration-300 flex items-center justify-center gap-2">
+                    <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse"></div>
+                    Contratos Managment
+                  </Button>
+                </Link>
+                <Link href="/app" onClick={() => setIsMenuOpen(false)}>
+                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white border-0 font-semibold py-2 rounded-xl transition-all duration-300">
+                    Stake SPFC
+                  </Button>
+                </Link>
+              </div>
+              
               {navigationItems.map((item) => (
                 <div key={item.title} className="space-y-2">
                   {item.href ? (
