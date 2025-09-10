@@ -1,134 +1,143 @@
-# SPFC Fanify: Sistema de Torcidas Organizadas com Blockchain
+# SPFC Fanify: Organized Fan Groups System with Blockchain
 
-> _TEAM SPFC Fanify: https://hackathon-chiliz-morumbi.vercel.app/
+> **🚀 LIVE DEMO**: [https://hackathon-chiliz-morumbi.vercel.app/](https://hackathon-chiliz-morumbi.vercel.app/)  
+> **📋 WORKING CONTRACTS**: [https://hackathon-chiliz-morumbi.vercel.app/contracts](https://hackathon-chiliz-morumbi.vercel.app/contracts)  
+> _Note: The main app is still under development due to time constraints, but the contracts are fully functional!_
 
 ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Web-blue)
 ![Blockchain](https://img.shields.io/badge/Blockchain-Chiliz-red)
 ![Team](https://img.shields.io/badge/Team-SPFC%20Tricolor-red)
+![Status](https://img.shields.io/badge/Status-Contracts%20Live-green)
 
 ---
 
-### 🌐 Introdução
+### 🌐 Introduction
 
-O SPFC Fanify é uma plataforma blockchain revolucionária desenvolvida especificamente para as torcidas organizadas do São Paulo Futebol Clube. O sistema permite que torcedores façam stake de tokens $SPFC em torcidas organizadas, participem de votações, organizem eventos e exerçam governança através de contratos inteligentes na Chiliz Chain.
+SPFC Fanify is a revolutionary blockchain platform developed specifically for São Paulo Futebol Clube's organized fan groups. The system allows fans to stake $SPFC tokens in organized fan groups, participate in voting, organize events, and exercise governance through smart contracts on the Chiliz Chain.
 
-**🎯 Missão**: Conectar a paixão tricolor com a tecnologia blockchain, criando um ecossistema digital onde torcedores podem se engajar de forma mais profunda e organizada com o clube e entre si.
+**🎯 Mission**: Connect the tricolor passion with blockchain technology, creating a digital ecosystem where fans can engage more deeply and organized with the club and each other.
 
 ---
 
 ### 🔴 Chiliz Chain
 
-Nossa plataforma é construída na Chiliz Chain, uma blockchain especializada em esportes e entretenimento, oferecendo transações rápidas e alta escalabilidade. Ao escolher a Chiliz, alinhamos nossa missão com uma rede já abraçada por grandes clubes e milhões de fãs—tornando-a o lar perfeito para o SPFC Fanify.
+Our platform is built on Chiliz Chain, a blockchain specialized in sports and entertainment, offering fast transactions and high scalability. By choosing Chiliz, we align our mission with a network already embraced by major clubs and millions of fans—making it the perfect home for SPFC Fanify.
 
-Aproveitando o ecossistema centrado em fãs da Chiliz, garantimos que cada momento de engajamento tricolor seja não apenas seguro e transparente, mas também profundamente conectado à comunidade esportiva global.
-
----
-
-### 🏛️ Funcionalidades Principais
-
-#### 🪙 Token $SPFC
-- **Nome**: São Paulo FC Token
-- **Símbolo**: SPFC  
-- **Decimais**: 18
-
-#### 🏟️ Torcidas Organizadas
-- **Criação**: Qualquer usuário pode criar uma torcida
-- **Liderança**: Criador se torna líder da torcida
-- **Membros**: Usuários podem entrar fazendo stake mínimo de 1000 SPFC
-- **Informações**: Nome, descrição, imagem, redes sociais
-
-#### 🗳️ Sistema de Votações
-- **Criação**: Apenas líderes de torcidas podem criar votações
-- **Participação**: Apenas membros da torcida podem votar
-- **Opções**: Até 10 opções de voto por votação
-- **Duração**: Tempo configurável para cada votação
-
-#### 🎉 Eventos e Caravanas
-- **Criação**: Líderes podem criar eventos (caravanas, festas, etc.)
-- **Inscrições**: Membros podem se inscrever nos eventos
-- **Pagamento**: Eventos podem ter preço em tokens SPFC
-- **Limite**: Controle de número máximo de participantes
-
-#### 🏛️ Governança
-- **Propostas**: Líderes podem criar propostas de governança
-- **Votação**: Membros votam a favor ou contra
-- **Execução**: Propostas aprovadas podem ser executadas
+Leveraging Chiliz's fan-centric ecosystem, we ensure that every tricolor engagement moment is not only secure and transparent, but also deeply connected to the global sports community.
 
 ---
 
-### 🔗 Smart Contracts na Chiliz Testnet
+### 🏛️ Main Features
 
-📄 **Contratos Deployados:**  
+#### 🪙 $SPFC Token
+- **Name**: São Paulo FC Token
+- **Symbol**: SPFC  
+- **Decimals**: 18
 
-- 🪙 [SPFCToken](https://testnet.chiliscan.com/address/)
-- 🏟️ [TorcidaOrganizada](https://testnet.chiliscan.com/address/)
+#### 🏟️ Organized Fan Groups
+- **Creation**: Any user can create a fan group
+- **Leadership**: Creator becomes the fan group leader
+- **Members**: Users can join by staking a minimum of 1000 SPFC
+- **Information**: Name, description, image, social networks
 
-⚠️ **Status do Deploy**: Os contratos foram enviados para a rede, mas devido a problemas de timing e congestionamento da rede, algumas transações ainda estão pendentes de confirmação. O sistema está funcionalmente completo, mas aguardando confirmação final das transações na blockchain.
+#### 🗳️ Voting System
+- **Creation**: Only fan group leaders can create votes
+- **Participation**: Only fan group members can vote
+- **Options**: Up to 10 voting options per vote
+- **Duration**: Configurable time for each vote
 
-✅ Em desenvolvimento ativo · Live na **Chiliz Chain (Spicy Testnet)**  
-🔐 Sistema completo de governança e engajamento para torcidas organizadas do SPFC.
+#### 🎉 Events and Caravans
+- **Creation**: Leaders can create events (caravans, parties, etc.)
+- **Registration**: Members can register for events
+- **Payment**: Events can have a price in SPFC tokens
+- **Limit**: Control of maximum number of participants
+
+#### 🏛️ Governance
+- **Proposals**: Leaders can create governance proposals
+- **Voting**: Members vote for or against
+- **Execution**: Approved proposals can be executed
 
 ---
 
-## 🛠 Instalação e Configuração
+### 🔗 Smart Contracts on Chiliz Testnet
+
+📄 **Deployed Contracts:**  
+
+- 🪙 [SPFCToken](https://testnet.chiliscan.com/address/0x1f7178b26a7bb14d4d15866d910fd0d1870acd78): `0x1f7178b26a7bb14d4d15866d910fd0d1870acd78`
+- 🏟️ [TorcidaOrganizada](https://testnet.chiliscan.com/address/0xf9b689498a3ea34a2c9f9fda7a664a9e3017742a): `0xf9b689498a3ea34a2c9f9fda7a664a9e3017742a`
+
+✅ **Deploy Status**: Contracts successfully deployed and confirmed on Chiliz Chain (Spicy Testnet)  
+🔐 Complete governance and engagement system for SPFC organized fan groups.
+
+**🌐 Try the Working Contracts**: [https://hackathon-chiliz-morumbi.vercel.app/contracts](https://hackathon-chiliz-morumbi.vercel.app/contracts)
+
+---
+
+## 🛠 Installation and Setup
 
 ### Front-end
 
-1. **Pré-requisitos**
-    - NodeJS instalado na sua máquina
-    - Carteira Web3 (MetaMask, WalletConnect, etc.)
+1. **Prerequisites**
+    - NodeJS installed on your machine
+    - Web3 Wallet (MetaMask, WalletConnect, etc.)
 
-2. **Clone o Repositório**
+2. **Clone the Repository**
 
     ```bash
     git clone https://github.com/bellujrb/hackathon-chiliz-morumbi.git
     cd front-end
     ```
 
-3. **Instalar Dependências**
+3. **Install Dependencies**
 
     ```bash
     npm install
-    # ou
+    # or
     pnpm install
     ```
 
-4. **Executar a Aplicação**
+4. **Run the Application**
 
     ```bash
     npm run dev
-    # ou
+    # or
     pnpm dev
     ```
 
 ### Smart Contracts (Web3)
 
-1. **Pré-requisitos**
-    - Foundry instalado
-    - Chaves privadas configuradas
+1. **Prerequisites**
+    - Foundry installed
+    - Private keys configured
 
-2. **Deploy dos Contratos**
+2. **Deploy Contracts**
 
     ```bash
     cd web3
     ./deploy-spfc.sh
     ```
 
-⚠️ **Nota sobre Deploy**: Durante o desenvolvimento, enfrentamos problemas de timing no deploy dos contratos na Chiliz Chain. As transações foram enviadas mas algumas ainda estão pendentes de confirmação devido ao congestionamento da rede. O sistema está funcionalmente completo e pronto para uso assim que as transações forem confirmadas.
+### Project Structure
 
+```
+hackathon-chiliz-morumbi/
+├── front-end/          # Frontend Application (Next.js)
+├── web3/              # Smart Contracts (Foundry)
+└── README.md          # Project Documentation
+```
 
-#### `hackathon-chiliz-morumbi`
-- `front-end`
-    - Frontend Application
-- `web3`
-    - Blockchain Application
-- `README.md`
-    - Documentation Project
+---
 
+## 🚀 Quick Start
+
+1. **Visit the Live Demo**: [https://hackathon-chiliz-morumbi.vercel.app/](https://hackathon-chiliz-morumbi.vercel.app/)
+2. **Test the Contracts**: [https://hackathon-chiliz-morumbi.vercel.app/contracts](https://hackathon-chiliz-morumbi.vercel.app/contracts)
+3. **Connect your wallet** to Chiliz Testnet (Chain ID: 88882)
+4. **Start interacting** with the SPFC Token and Torcida Organizada contracts!
 
 ---
 
 ## 🙏 Acknowledgments
 
-Special thanks to Chiliz for this ambitious opportunity.
+Special thanks to Chiliz for this ambitious opportunity and for providing the perfect blockchain infrastructure for sports fan engagement.
