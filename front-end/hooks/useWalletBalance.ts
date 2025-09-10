@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { formatEther, getContract } from 'viem';
 import { useAccount, usePublicClient } from 'wagmi';
 import deployedContracts from '@/lib/deployedContracts';
+import SPFCTokenABI from '@/abi/SPFCToken.json';
 
 export const useWalletBalance = () => {
   const { address, isConnected } = useAccount();
@@ -26,16 +27,16 @@ export const useWalletBalance = () => {
       const balanceWei = await publicClient.getBalance({ address });
       setBalance(formatEther(balanceWei));
 
-      // Fetch HYPE token balance (igual ao /web3)
-      const hypeTokenContract = getContract({
-        address: deployedContracts.HypeToken.address as `0x${string}`,
-        abi: deployedContracts.HypeToken.abi,
+      // Fetch SPFC token balance (igual ao /web3)
+      const spfcTokenContract = getContract({
+        address: deployedContracts.SPFCToken.address as `0x${string}`,
+        abi: SPFCTokenABI.abi,
         client: publicClient,
       });
-      const hypeBalanceWei = await hypeTokenContract.read.balanceOf([
+      const spfcBalanceWei = await spfcTokenContract.read.balanceOf([
         address as `0x${string}`,
       ]);
-      setHypeBalance(formatEther(hypeBalanceWei as bigint));
+      setHypeBalance(formatEther(spfcBalanceWei as bigint));
     } catch (err: any) {
       setError(err.message || 'Failed to fetch balances');
       setBalance('0');
