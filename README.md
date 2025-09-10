@@ -1,6 +1,6 @@
 # SPFC Fanify: Sistema de Torcidas Organizadas com Blockchain
 
-> _TEAM SPFC Fanify: https://fanify.vercel.app/
+> _TEAM SPFC Fanify: https://hackathon-chiliz-morumbi.vercel.app/
 
 ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Web-blue)
@@ -61,8 +61,8 @@ Aproveitando o ecossistema centrado em fãs da Chiliz, garantimos que cada momen
 
 📄 **Contratos Deployados:**  
 
-- 🪙 [SPFCToken](https://testnet.chiliscan.com/address/0x0Be0D8CB83C120DD78312A8C713FcCf7Bf06A5d2)
-- 🏟️ [TorcidaOrganizada](https://testnet.chiliscan.com/address/0x6B41840a29CbDB21fc6C2D5CeA142c394cDC1852)
+- 🪙 [SPFCToken](https://testnet.chiliscan.com/address/)
+- 🏟️ [TorcidaOrganizada](https://testnet.chiliscan.com/address/)
 
 ⚠️ **Status do Deploy**: Os contratos foram enviados para a rede, mas devido a problemas de timing e congestionamento da rede, algumas transações ainda estão pendentes de confirmação. O sistema está funcionalmente completo, mas aguardando confirmação final das transações na blockchain.
 
@@ -94,14 +94,7 @@ Aproveitando o ecossistema centrado em fãs da Chiliz, garantimos que cada momen
     pnpm install
     ```
 
-4. **Configurar Variáveis de Ambiente**
-
-    ```bash
-    # Criar arquivo .env.local
-    cp .env.example .env.local
-    ```
-
-5. **Executar a Aplicação**
+4. **Executar a Aplicação**
 
     ```bash
     npm run dev
